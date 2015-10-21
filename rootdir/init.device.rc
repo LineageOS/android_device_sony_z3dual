@@ -1,3 +1,6 @@
+on early-init
+    export LD_SHIM_LIBS /system/lib/libril.so|libril_shim.so
+
 on boot
     # Define TCP buffer sizes for various networks
     # ReadMin, ReadInitial, ReadMax, WriteMin, WriteInitial, WriteMax,
