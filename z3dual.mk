@@ -13,9 +13,9 @@
 # limitations under the License.
 
 # Inherit the fusion-common definitions
-$(call inherit-product, device/sony/shinano-common/shinano.mk)
+$(call inherit-product, device/sony/shinano_ds-common/shinano_ds.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/sony/z3/overlay
+DEVICE_PACKAGE_OVERLAYS += device/sony/z3dual/overlay
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
@@ -34,7 +34,8 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Device specific init
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/init.device.rc:root/init.device.rc
+    $(LOCAL_PATH)/rootdir/init.device.rc:root/init.device.rc \
+    $(LOCAL_PATH)/rootdir/etc/init.qcom.ril.sh:system/etc/init.qcom.ril.sh
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -49,4 +50,4 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk)
 
 # Include non-opensource parts
-$(call inherit-product, vendor/sony/z3/z3-vendor.mk)
+$(call inherit-product, vendor/sony/z3dual/z3dual-vendor.mk)
