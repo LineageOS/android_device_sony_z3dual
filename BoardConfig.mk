@@ -12,8 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# inherit from the common shinano_ds definitions
-include device/sony/shinano_ds-common/BoardConfigCommon.mk
+# inherit from the common z3 definitions
+include device/sony/z3/BoardConfig.mk
 
 # inherit from the proprietary version
 #-include vendor/sony/z3dual/BoardConfigVendor.mk
@@ -21,17 +21,10 @@ include device/sony/shinano_ds-common/BoardConfigCommon.mk
 # Assert
 TARGET_OTA_ASSERT_DEVICE := D6633,z3dual
 
-TARGET_SPECIFIC_HEADER_PATH += device/sony/z3dual/include
-
-BOARD_HARDWARE_CLASS += device/sony/z3dual/cmhw
+TARGET_SYSTEM_PROP := device/sony/z3dual/system.prop
 
 # Kernel properties
 TARGET_KERNEL_CONFIG := cm_shinano_leo_dsds_defconfig
 
-# Partition information
-BOARD_VOLD_MAX_PARTITIONS := 25
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 12656242688 # 12656259072 - 16384
-
-# SELinux
-BOARD_SEPOLICY_DIRS += \
-    device/sony/z3dual/sepolicy
+# RIL
+BOARD_RIL_CLASS := ../../../device/sony/z3dual/ril/
