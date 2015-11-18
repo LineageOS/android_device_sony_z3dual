@@ -19,7 +19,7 @@ include device/sony/z3/BoardConfig.mk
 #-include vendor/sony/z3dual/BoardConfigVendor.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := D6633,z3dual
+TARGET_OTA_ASSERT_DEVICE := D6633,D6683,z3dual
 
 TARGET_SYSTEM_PROP := device/sony/z3dual/system.prop
 
