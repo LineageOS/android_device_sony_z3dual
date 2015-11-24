@@ -31,9 +31,6 @@ import java.util.Arrays;
  * {@hide}
  */
 public class SonyRIL extends RIL {
-    private static final int MAX_RILS = 2;
-    private static final int[] RIL_NETWORK_TYPE = new int[MAX_RILS];
-
     private static final String SONYRIL_LOG_TAG = "SonyRIL";
     private static final boolean SONYRIL_LOGD = false;
 
@@ -49,7 +46,6 @@ public class SonyRIL extends RIL {
                    int cdmaSubscription, Integer instanceId) {
         super(context, preferredNetworkType, cdmaSubscription, instanceId);
 
-        processRILPreferredNetworkType(mInstanceId, preferredNetworkType);
         mQANElements = SystemProperties.getInt("ro.ril.telephony.mqanelements", 5);
     }
 
@@ -84,48 +80,8 @@ public class SonyRIL extends RIL {
                 tdScdmaRscp, mIsGsm);
     }
 
-    @Override
-    protected Object responseGetPreferredNetworkType(Parcel p) {
-        Object o = super.responseGetPreferredNetworkType(p);
-
-        processRILPreferredNetworkType(mInstanceId, mPreferredNetworkType);
-
-        return o;
-    }
-
-    @Override
-    public void setPreferredNetworkType(int networkType, Message response) {
-        super.setPreferredNetworkType(networkType, response);
-
-        processRILPreferredNetworkType(mInstanceId, networkType);
-    }
-
     private void sonyRilLog(String msg) {
         Rlog.d(SONYRIL_LOG_TAG, msg
                 + (mInstanceId != null ? (" [SUB" + mInstanceId + "]") : ""));
-    }
-
-    private void logNetworkType() {
-        if (!SONYRIL_LOGD) return;
-
-        sonyRilLog("responseGetPreferredNetworkType: networkType=" +
-                String.valueOf(mPreferredNetworkType));
-
-        sonyRilLog("responseGetPreferredNetworkType: RIL_NETWORK_TYPE=" +
-                Arrays.toString(RIL_NETWORK_TYPE));
-
-        sonyRilLog("gsm.network.type=" +
-                Arrays.toString(RIL_NETWORK_TYPE));
-    }
-
-    private void processRILPreferredNetworkType(Integer instanceId, int type) {
-        if (instanceId != null) {
-            RIL_NETWORK_TYPE[instanceId] = type;
-        }
-
-        SystemProperties.set("persist.radio.prefer.network", String.valueOf(RIL_NETWORK_TYPE[0]));
-        SystemProperties.set("persist.radio.prefer.nw.sub", String.valueOf(RIL_NETWORK_TYPE[1]));
-
-        logNetworkType();
     }
 }
