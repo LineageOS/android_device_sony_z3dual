@@ -36,3 +36,8 @@ LOCAL_PATH := $(call my-dir)
 PRODUCT_PACKAGES += \
     libxml2 \
     libcnefeatureconfig
+
+# GPS
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/gps/quipc.conf:system/etc/quipc.conf \
+    $(LOCAL_PATH)/gps/xtwifi.conf:system/etc/xtwifi.conf
