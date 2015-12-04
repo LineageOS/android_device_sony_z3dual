@@ -28,3 +28,6 @@ TARGET_KERNEL_CONFIG := cm_shinano_leo_dsds_defconfig
 
 # RIL
 BOARD_RIL_CLASS := ../../../device/sony/z3dual/ril/
+
+# GPS
+TARGET_PROVIDES_GPS_LOC_API := false
