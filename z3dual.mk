@@ -27,6 +27,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/mixer_paths.xml:system/etc/mixer_paths.xml
 
+# GPS
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/gps/quipc.conf:system/etc/quipc.conf \
+    $(LOCAL_PATH)/gps/xtwifi.conf:system/etc/xtwifi.conf
+
 # Inherit the z3 definitions
 LOCAL_PATH := device/sony/z3
 include device/sony/z3/z3.mk
