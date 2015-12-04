@@ -14,6 +14,10 @@ etc/firmware/adsp.b11
 etc/firmware/adsp.b12
 etc/firmware/adsp.mdt
 
+# GPS
+-app/com.qualcomm.location-z3dual.apk:priv-app/com.qualcomm.location-z3dual/com.qualcomm.location-z3dual.apk
+vendor/lib/liblocationservice.so
+
 # IRSC
 bin/irsc_util
 
