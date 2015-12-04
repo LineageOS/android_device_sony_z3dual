@@ -14,6 +14,35 @@ etc/firmware/adsp.b11
 etc/firmware/adsp.b12
 etc/firmware/adsp.mdt
 
+# GPS
+-app/com.qualcomm.location-z3dual.apk:priv-app/com.qualcomm.location-z3dual/com.qualcomm.location-z3dual.apk
+bin/location-mq
+bin/xtwifi-client
+bin/xtwifi-inet-agent
+etc/permissions/com.qualcomm.location.xml
+etc/xtra_root_cert.pem
+lib/hw/gps.msm8974.so
+lib/libgps.utils.so
+lib/libloc_api_v02.so
+lib/libloc_core.so
+lib/libloc_ds_api.so
+lib/libloc_eng.so
+vendor/lib/hw/flp.default.so
+vendor/lib/libalarmservice_jni.so
+vendor/lib/libgeofence.so
+vendor/lib/libizat_core.so
+vendor/lib/liblbs_core.so
+vendor/lib/libloc_ext.so
+vendor/lib/liblocationservice.so
+vendor/lib/liblowi_client.so
+vendor/lib/libquipc_os_api.so
+vendor/lib/libquipc_ulp_adapter.so
+vendor/lib/libulp2.so
+vendor/lib/libxt_native.so
+vendor/lib/libxtadapter.so
+vendor/lib/libxtwifi_ulp_adaptor.so
+vendor/lib/libxtwifi_zpp_adaptor.so
+
 # IRSC
 bin/irsc_util
 
