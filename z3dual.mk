@@ -27,6 +27,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/mixer_paths.xml:system/etc/mixer_paths.xml
 
+# Wifi
+PRODUCT_COPY_FILES += \
+   $(LOCAL_PATH)/bcmdhd.cal:system/etc/wifi/bcmdhd.cal
+
 # Inherit the z3 definitions
 LOCAL_PATH := device/sony/z3
 include device/sony/z3/z3.mk
