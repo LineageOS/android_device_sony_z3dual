@@ -33,8 +33,8 @@ public class SonyRIL extends RIL {
 
     private boolean mIsGsm = false;
 
-    public SonyRIL(Context context, int networkMode, int cdmaSubscription) {
-        super(context, networkMode, cdmaSubscription, null);
+    public SonyRIL(Context context, int preferredNetworkType, int cdmaSubscription) {
+        super(context, preferredNetworkType, cdmaSubscription, null);
 
         mQANElements = SystemProperties.getInt("ro.ril.telephony.mqanelements", 5);
     }
