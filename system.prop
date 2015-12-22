@@ -26,4 +26,5 @@ persist.telephony.oosisdc=false
 ro.telephony.default_network=9,1
 ro.ril.telephony.mqanelements=5
 ro.multisim.set_audio_params=true
+ro.ril.multi_rat_capable=true
 ro.telephony.ril.config=simactivation
