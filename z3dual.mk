@@ -34,6 +34,6 @@ LOCAL_PATH := $(call my-dir)
 
 # Radio
 PRODUCT_PACKAGES += \
-    libril_shim \
+    libsony_ril \
     libxml2 \
     libcnefeatureconfig

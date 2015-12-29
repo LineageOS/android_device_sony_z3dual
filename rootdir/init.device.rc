@@ -1,5 +1,5 @@
-on early-init
-    export LD_SHIM_LIBS /system/lib/libril.so|libril_shim.so
+on init
+    export LD_PRELOAD "/system/lib/libsony_ril.so"
 
 on boot
     # Define TCP buffer sizes for various networks
