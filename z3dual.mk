@@ -36,6 +36,5 @@ DEVICE_PACKAGE_OVERLAYS += device/sony/z3dual/overlay
 
 # Radio
 PRODUCT_PACKAGES += \
-    libsony_ril \
     libxml2 \
     libcnefeatureconfig

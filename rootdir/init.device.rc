@@ -1,6 +1,3 @@
-on init
-    export LD_PRELOAD "/system/lib/libsony_ril.so"
-
 on boot
     # Define TCP buffer sizes for various networks
     # ReadMin, ReadInitial, ReadMax, WriteMin, WriteInitial, WriteMax,
