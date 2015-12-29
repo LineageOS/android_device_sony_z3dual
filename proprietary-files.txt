@@ -67,13 +67,10 @@ vendor/lib/libqmi_encdec.so
 vendor/lib/libqmiservices.so
 
 # RIL
-bin/cnd
 bin/efsks
 bin/ks
 bin/qcks
 bin/rild
-etc/cne/SwimConfig.xml
-etc/cne/andsfCne.xml
 etc/data/qmi_config.xml
 etc/permissions/com.sonyericsson.android.semcrilextension.xml
 etc/permissions/qcnvitems.xml
@@ -82,21 +79,13 @@ etc/permissions/qcrilhook.xml
 -framework/qcrilhook.jar
 -framework/semcrilextension.jar
 lib/libmdmdetect.so
-lib/libreference-ril.so
 lib/libril.so
-lib/librilutils.so
 -app/qcrilmsgtunnel/qcrilmsgtunnel.apk:priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
-vendor/lib/libcne.so
 vendor/lib/libcneapiclient.so
-vendor/lib/libcneconn.so
-vendor/lib/libcneqmiutils.so
 vendor/lib/libconfigdb.so
-vendor/lib/libmasc.so
 vendor/lib/libperipheral_client.so
 vendor/lib/libsmemlog.so
 vendor/lib/libsystem_health_mon.so
-vendor/lib/libvendorconn.so
-vendor/lib/libwqe.so
 vendor/lib/libxml.so
 
 # Security

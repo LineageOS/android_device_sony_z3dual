@@ -17,10 +17,8 @@
 package com.android.internal.telephony;
 
 import android.content.Context;
-import android.os.Parcel;
 import android.os.SystemProperties;
 import android.telephony.Rlog;
-import android.telephony.SignalStrength;
 
 /**
  * RIL customization for Xperia Z3 DUAL
@@ -50,31 +48,6 @@ public class SonyRIL extends RIL {
     public void setPhoneType(int phoneType) {
         super.setPhoneType(phoneType);
         mIsGsm = (phoneType != RILConstants.CDMA_PHONE);
-    }
-
-    @Override
-    protected Object
-    responseSignalStrength(Parcel p) {
-        int gsmSignalStrength = p.readInt();
-        int gsmBitErrorRate = p.readInt();
-        int umtsRscp = p.readInt(); // not used by stock SignalStrength
-        int cdmaDbm = p.readInt();
-        int cdmaEcio = p.readInt();
-        int evdoDbm = p.readInt();
-        int evdoEcio = p.readInt();
-        int evdoSnr = p.readInt();
-        int lteSignalStrength = p.readInt();
-        int lteRsrp = p.readInt();
-        int lteRsrq = p.readInt();
-        int lteRssnr = p.readInt();
-        int lteCqi = p.readInt();
-        int tdScdmaRscp = p.readInt();
-        boolean isGsm = p.readInt() != 0;
-
-        // constructor sets default true, makeSignalStrengthFromRilParcel does not set it
-        return new SignalStrength(gsmSignalStrength, gsmBitErrorRate, cdmaDbm, cdmaEcio, evdoDbm,
-                evdoEcio, evdoSnr, lteSignalStrength, lteRsrp, lteRsrq, lteRssnr, lteCqi,
-                tdScdmaRscp, mIsGsm);
     }
 
     private void sonyRilLog(String msg) {
