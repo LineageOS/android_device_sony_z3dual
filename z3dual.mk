@@ -35,3 +35,5 @@ PRODUCT_COPY_FILES += \
 LOCAL_PATH := device/sony/z3
 include device/sony/z3/z3.mk
 LOCAL_PATH := $(call my-dir)
+
+DEVICE_PACKAGE_OVERLAYS += device/sony/z3dual/overlay
