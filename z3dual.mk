@@ -35,9 +35,3 @@ PRODUCT_COPY_FILES += \
 LOCAL_PATH := device/sony/z3
 include device/sony/z3/z3.mk
 LOCAL_PATH := $(call my-dir)
-
-# Radio
-PRODUCT_PACKAGES += \
-    libril_shim \
-    libxml2 \
-    libcnefeatureconfig
