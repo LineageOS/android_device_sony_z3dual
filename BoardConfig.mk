@@ -23,8 +23,5 @@ TARGET_OTA_ASSERT_DEVICE := D6633,D6683,z3dual
 
 TARGET_SYSTEM_PROP := device/sony/z3dual/system.prop
 
-# Kernel properties
-TARGET_KERNEL_CONFIG := cm_shinano_leo_dsds_defconfig
-
 # RIL
 BOARD_RIL_CLASS := ../../../device/sony/z3dual/ril/
