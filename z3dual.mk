@@ -18,11 +18,6 @@
 # For PRODUCT_COPY_FILES, the first rule takes precedence
 $(call inherit-product, vendor/sony/z3dual/z3dual-vendor.mk)
 
-# Device specific init
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/init.device.rc:root/init.device.rc \
-    $(LOCAL_PATH)/rootdir/etc/init.qcom.ril.sh:system/etc/init.qcom.ril.sh
-
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/mixer_paths.xml:system/etc/mixer_paths.xml
