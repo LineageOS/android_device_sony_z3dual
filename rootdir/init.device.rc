@@ -43,23 +43,18 @@ on boot
     chmod 0660 /sys/devices/virtual/input/clearpad/glove
 
 # for multi rild
-service_redefine ril-daemon /system/bin/rild
-    class main
-    socket rild stream 660 root radio
-    socket rild-debug stream 660 radio system
-    user root
-    group radio cache inet misc audio log qcom_diag
-
 service ril-daemon2 /system/bin/rild -c 2
     class main
     socket rild2 stream 660 root radio
+    socket sap_uim_socket2 stream 660 bluetooth bluetooth
     socket rild-debug2 stream 660 radio system
     user root
     disabled
-    group radio cache inet misc audio sdcard_r sdcard_rw diag qcom_diag log
+    group radio cache inet misc audio log qcom_diag
 
 service rild2-wrapper /system/bin/sh /system/etc/init.qcom.ril.sh
     class late_start
     user root
     group root
     oneshot
+
