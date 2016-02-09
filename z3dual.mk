@@ -31,6 +31,16 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
    $(LOCAL_PATH)/bcmdhd.cal:system/etc/wifi/bcmdhd.cal
 
+# LTE, GSM/WCDMA
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.multisim.config=dsds \
+    persist.radio.disable_flexmap=1 \
+    persist.radio.ignore_dom_time=120 \
+    persist.radio.multisim.config=dsds \
+    ro.multisim.set_audio_params=true \
+    ro.telephony.default_network=9,1 \
+    ro.telephony.ril.config=simactivation
+
 # Inherit the z3 definitions
 LOCAL_PATH := device/sony/z3
 include device/sony/z3/z3.mk
