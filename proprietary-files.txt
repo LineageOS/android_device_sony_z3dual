@@ -15,8 +15,6 @@ etc/firmware/adsp.b12
 etc/firmware/adsp.mdt
 
 # Modem
-etc/firmware/mba.b00
-etc/firmware/mba.mdt
 etc/firmware/modem.b00
 etc/firmware/modem.b01
 etc/firmware/modem.b02
@@ -39,14 +37,3 @@ etc/firmware/modem.b24
 etc/firmware/modem.b25
 etc/firmware/modem.mdt
 
-# Security firmware
-etc/firmware/tzfullseg.b00
-etc/firmware/tzfullseg.b01
-etc/firmware/tzfullseg.b02
-etc/firmware/tzfullseg.b03
-etc/firmware/tzfullseg.mdt
-etc/firmware/tzplayrdy.b00
-etc/firmware/tzplayrdy.b01
-etc/firmware/tzplayrdy.b02
-etc/firmware/tzplayrdy.b03
-etc/firmware/tzplayrdy.mdt
