@@ -15,6 +15,14 @@
 # limitations under the License.
 #
 
+# Semc
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.semc.version.sw=1286-4838 \
+    ro.semc.version.cust=1288-7358 \
+    ro.semc.version.cust_revision=R4D \
+    ro.semc.product.model=D6633 \
+    ro.semc.ms_type_id=PM-0800-BV
+
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.multisim.config=dsds \
