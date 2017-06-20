@@ -23,10 +23,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/init.device.rc:root/init.device.rc \
     $(LOCAL_PATH)/rootdir/etc/init.qcom.ril.sh:system/etc/init.qcom.ril.sh
 
-# Audio
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/audio/mixer_paths.xml:system/etc/mixer_paths.xml
-
 # Inherit the z3 definitions
 LOCAL_PATH := device/sony/z3
 include device/sony/z3/z3.mk
