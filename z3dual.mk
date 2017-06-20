@@ -12,10 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Include non-opensource parts
-# We call this first because z3dual contains some binaries
-# which are also present in shinano-common
-# For PRODUCT_COPY_FILES, the first rule takes precedence
+# Include z3 dual specific blobs
 $(call inherit-product, vendor/sony/z3dual/z3dual-vendor.mk)
 
 # Device specific init
@@ -27,8 +24,3 @@ PRODUCT_COPY_FILES += \
 LOCAL_PATH := device/sony/z3
 include device/sony/z3/z3.mk
 LOCAL_PATH := $(call my-dir)
-
-# Radio
-PRODUCT_PACKAGES += \
-    libxml2 \
-    libcnefeatureconfig

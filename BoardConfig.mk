@@ -15,16 +15,13 @@
 # inherit from the common z3 definitions
 include device/sony/z3/BoardConfig.mk
 
-# inherit from the proprietary version
-#-include vendor/sony/z3dual/BoardConfigVendor.mk
-
 # Assert
 TARGET_OTA_ASSERT_DEVICE := D6633,D6683,z3dual
 
 TARGET_SYSTEM_PROP := device/sony/z3dual/system.prop
 
 # Kernel properties
-TARGET_KERNEL_CONFIG := cm_shinano_leo_dsds_defconfig
+TARGET_KERNEL_CONFIG := lineageos_shinano_leo_defconfig
 
 # RIL
 BOARD_RIL_CLASS := ../../../device/sony/z3dual/ril/
