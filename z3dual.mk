@@ -15,11 +15,6 @@
 # Include z3 dual specific blobs
 $(call inherit-product, vendor/sony/z3dual/z3dual-vendor.mk)
 
-# Device specific init
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/init.device.rc:root/init.device.rc \
-    $(LOCAL_PATH)/rootdir/etc/init.qcom.ril.sh:system/etc/init.qcom.ril.sh
-
 # Inherit the z3 definitions
 LOCAL_PATH := device/sony/z3
 include device/sony/z3/z3.mk
