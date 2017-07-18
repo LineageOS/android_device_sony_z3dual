@@ -18,6 +18,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from z3dual device
 $(call inherit-product, device/sony/z3dual/z3dual.mk)
+$(call inherit-product, device/sony/z3dual/twrp.mk)
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_NAME := full_z3dual

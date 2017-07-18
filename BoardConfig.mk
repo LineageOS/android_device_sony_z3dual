@@ -23,5 +23,7 @@ TARGET_SYSTEM_PROP := device/sony/z3dual/system.prop
 # Kernel properties
 TARGET_KERNEL_CONFIG := lineageos_shinano_leo_defconfig
 
+TARGET_RECOVERY_DEVICE_MODULES += twrp.fstab
+
 # RIL
 BOARD_RIL_CLASS := ../../../device/sony/z3dual/ril/
