@@ -17,3 +17,8 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_z3dual.mk
+
+COMMON_LUNCH_CHOICES := \
+    lineage_z3dual-user \
+    lineage_z3dual-userdebug \
+    lineage_z3dual-eng
