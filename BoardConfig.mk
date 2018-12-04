@@ -24,6 +24,3 @@ TARGET_OTA_ASSERT_DEVICE := D6633,D6683,z3dual
 
 # Kernel properties
 TARGET_KERNEL_CONFIG := lineageos_shinano_leo_defconfig
-
-# RIL
-BOARD_RIL_CLASS := ../../../device/sony/z3dual/ril/
