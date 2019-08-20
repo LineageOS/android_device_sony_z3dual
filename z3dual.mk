@@ -19,6 +19,9 @@
 # Include z3 dual specific blobs
 $(call inherit-product, vendor/sony/z3dual/z3dual-vendor.mk)
 
+# Properties
+include $(DEVICE_PATH)/system_prop.mk
+
 # Inherit the z3 definitions
 LOCAL_PATH := device/sony/z3
 include device/sony/z3/z3.mk
