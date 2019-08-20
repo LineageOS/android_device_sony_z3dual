@@ -22,8 +22,6 @@ include device/sony/z3/BoardConfig.mk
 # Assert
 TARGET_OTA_ASSERT_DEVICE := D6633,D6683,z3dual
 
-TARGET_SYSTEM_PROP := device/sony/z3dual/system.prop
-
 # Kernel properties
 TARGET_KERNEL_CONFIG := lineageos_shinano_leo_defconfig
 
