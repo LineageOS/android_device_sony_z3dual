@@ -1,19 +1,28 @@
-Xperia Z3 Dual (Shinano platform)
-======================================
+Copyright (C) 2013 The CyanogenMod Project
+Copyright (C) 2017-2020 The LineageOS Project
 
-Copyright 2013 - The CyanogenMod Project
-Copyright 2017 - The LineageOS Project
+Device configuration for Sony Xperia Z3 Dual
+=========================================
 
-depends on (Sony specific):
------------------------------
+The Sony Xperia Z3 Dual (the dual SIM variant of the Z3 originally codenamed _"leo"_, later rebranded as _"z3"_) is a high-end smartphone from Sony.
 
-    LineageOS/android_device_sony_z3
-    LineageOS/android_device_sony_shinano-common
-    LineageOS/android_device_sony_msm8974-common
+It was unveiled in September 2014. Release date was 4th September 2014.
+
+## Device specifications
+
+Basic   | Spec Sheet
+-------:|:-------------------------
+CPU     | Quad-core (4x2.5 GHz Krait 400)
+Chipset | Qualcomm MSM8974AC Snapdragon 801
+GPU     | Adreno 330
+Memory  | 3 GB RAM
+Shipped Android Version | 4.4.4
+Storage | 16 GB
+Battery | Li-ion 3100 mAh battery
+Display | 1080 × 1920 pixels, 5.2 inches (~424 ppi pixel density)
+Rear Camera  | Sony G Lens 20.7 MP 1/2.3" Exmor RS IMX220S back-side illuminated sensor
 
 
-| Version | Kernel version | Kernel repository                     |
-|---------|----------------|---------------------------------------|
-| 14.1    | 3.4            | LineageOS/android_kernel_sony_msm8974 |
-| 13      | 3.10           | LineageOS/android_kernel_sony_msm     |
-| 12.1    | 3.4            | LineageOS/android_kernel_sony_msm8974 |
+## Device picture
+
+![Sony Xperia Z3](https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Sony_Xperia_Z3_x2_%2821535461552%29.jpg/1024px-Sony_Xperia_Z3_x2_%2821535461552%29.jpg "Sony Xperia Z3. Photo by Falcon® Photography from France / CC BY-SA (https://creativecommons.org/licenses/by-sa/2.0)")
