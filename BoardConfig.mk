@@ -17,12 +17,8 @@
 # inherit from the common z3 definitions
 include device/sony/z3/BoardConfig.mk
 
-# Assert
-TARGET_OTA_ASSERT_DEVICE := D6633,D6683,z3dual
-
-
-# Kernel properties
-TARGET_KERNEL_CONFIG := lineageos_shinano_leo_defconfig
+# Overwrite Assert
+TARGET_OTA_ASSERT_DEVICE := z3dual
 
 # RIL
 BOARD_RIL_CLASS := ../../../device/sony/z3dual/ril/
