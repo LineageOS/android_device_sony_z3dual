@@ -1,4 +1,6 @@
-# Copyright (C) 2013 The CyanogenMod Project
+#
+# Copyright (C) 2013-2016 The CyanogenMod Project
+#           (C) 2017-2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,7 +20,6 @@ include device/sony/z3/BoardConfig.mk
 # Assert
 TARGET_OTA_ASSERT_DEVICE := D6633,D6683,z3dual
 
-TARGET_SYSTEM_PROP := device/sony/z3dual/system.prop
 
 # Kernel properties
 TARGET_KERNEL_CONFIG := lineageos_shinano_leo_defconfig

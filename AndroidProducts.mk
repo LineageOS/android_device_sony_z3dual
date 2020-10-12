@@ -14,8 +14,12 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := $(call my-dir)
+PRODUCT_MAKEFILES := \
+	 $(LOCAL_DIR)/lineage_z3dual.mk
 
-ifeq ($(TARGET_DEVICE),z3dual)
-    include $(call first-makefiles-under,$(LOCAL_PATH))
-endif
+
+COMMON_LUNCH_CHOICES := \
+    lineage_z3dual-user \
+    lineage_z3dual-userdebug \
+    lineage_z3dual-eng
+	 
