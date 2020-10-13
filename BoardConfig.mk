@@ -19,6 +19,3 @@ include device/sony/z3/BoardConfig.mk
 
 # Overwrite Assert
 TARGET_OTA_ASSERT_DEVICE := z3dual
-
-# RIL
-BOARD_RIL_CLASS := ../../../device/sony/z3dual/ril/
