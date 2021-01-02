@@ -1,7 +1,7 @@
 #
 # Copyright (C) 2013 The Android Open-Source Project
 # Copyright (C) 2013-2016 The CyanogenMod Project
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2020-2021 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,9 +20,7 @@
 $(call inherit-product, vendor/sony/z3dual/z3dual-vendor.mk)
 
 # Properties
-include $(DEVICE_PATH)/system_prop.mk
+include $(LOCAL_PATH)/system_prop.mk
 
 # Inherit the z3 definitions
-LOCAL_PATH := device/sony/z3
-include device/sony/z3/z3.mk
-LOCAL_PATH := $(call my-dir)
+$(call inherit-product, device/sony/z3/z3.mk)
