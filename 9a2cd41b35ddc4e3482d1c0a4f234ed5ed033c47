@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e1a4de99_ef3dc10a",
+        "filename": "AndroidProducts.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2021-04-01T12:04:57Z",
+      "side": 1,
+      "message": "You don\u0027t need to add old copyrights to newly created files.",
+      "revId": "9a2cd41b35ddc4e3482d1c0a4f234ed5ed033c47",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
