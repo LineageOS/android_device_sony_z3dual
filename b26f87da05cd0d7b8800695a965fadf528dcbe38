@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4fe7516a_48f9c1ab",
+        "filename": "system_prop.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2021-04-01T12:06:41Z",
+      "side": 1,
+      "message": "Can you remove these",
+      "revId": "b26f87da05cd0d7b8800695a965fadf528dcbe38",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
